@@ -8,6 +8,7 @@ import { Category, CategoryResponse } from "../../types/category.model";
 import { Dhamma, DhammaListResponse } from "../../types/dhamma.model";
 import styles from "./DhammaListPage.module.css";
 import lotus from '../../assets/img/lotus.svg';
+import lake from '../../assets/img/lake.png';
 
 
 interface DhammaListPageProps {}
@@ -144,7 +145,6 @@ const DhammaListPage: FC<DhammaListPageProps> = () => {
           <section className="py-2">
             <div className="container">
            
-
               <div className="row">
                 <div className="col-12 text-center">
                   <h1>{selectedOne?.id}</h1>
@@ -265,6 +265,14 @@ const DhammaListPage: FC<DhammaListPageProps> = () => {
                     </div>
                   </div>
                 )}
+
+
+              <div className="row">
+                <div className="col-12 text-center">
+                  <img src={lake} width="500" height="auto" />
+                </div>
+              </div>
+                
             </div>
           </section>
         </div>
