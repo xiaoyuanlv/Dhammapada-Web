@@ -125,7 +125,7 @@ const DhammaListPage: FC<DhammaListPageProps> = () => {
           <div className="col-lg-7 text-center mx-auto my-auto">
             <img src={lotus} width={77} height="auto" />
             <h1 className="text-white mb-2">{category?.id}</h1>
-            <h2 className='text-white mb-5'>  {category?.title} ( {category?.mm_title} ) </h2>
+            <h3 className='text-white mb-5'>  {category?.title} ( {category?.mm_title} ) </h3>
             <p className="lead mb-4 text-white opacity-8">
              
              {category?.pali_title} {category?.pali_roman}
