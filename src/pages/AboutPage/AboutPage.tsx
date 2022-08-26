@@ -17,6 +17,7 @@ const AboutPage: FC<AboutPageProps> = () => (
                     <h1>About</h1>
                   </div>
                   <div className="card-body text-center py-5">
+                    <h3>Myanmar Translation</h3>
                     <p>
                       ၁၉၄၉ ခုနှစ်၊ မေလ ၁၁ ရက်တွင် ဆရာတော် အရှင်သေဋ္ဌိလ
                       ပါဠိဘာသာမှ မြန်မာဘာသာသို့ ပြန်ဆိုသော ပထမအကြိမ် စာမူများကို
@@ -24,33 +25,36 @@ const AboutPage: FC<AboutPageProps> = () => (
                       ဖတ်ရှုပြီး ကွန်ပျူတာဖြင့် ပြန်လည်​ ရိုက်ယူထားခြင်း
                       ဖြစ်သည်။
                     </p>
+                    <h3 className="mt-5">English Translation</h3>
                     <p>
                       For the latest English Translation, I copied from the
                       website "The Buddha's Path of Wisdom translated from the
                       Pali by Acharya Buddharakkhita"
                       https://www.accesstoinsight.org.
                     </p>
+                    <h3 className="mt-5">Pali</h3>
                     <p>
-                      Thanks mom and dad. Thanks also my family, relatives,
-                      teachers and friends. With their help, these all happened.
+                      I copied from some websites.
+                    </p>
+                    <h3 className="mt-5">Thanks</h3>
+                    <p>
+                      Thanks mom, dad, brother, sisters for supporting me and understanding. 
                     </p>
                     <p>
                       မိမိ ယခု ပြုရသော ကုသိုလ် အစုစု တို့က်ို ယခု ဘဝတွင်
                       ကျေးဇူးရှင် မွေးမိခင် ဒေါ်မြင့်မြင့်နွယ် ဖခင် ဦးမြင့်လွင်
-                      တို့အား အမှူးထား၍ ယခု ဘဝတွင် ကျေးဇူးရှိသော အကို တော်စပ်သော
-                      ကိုထင်လင်းသူ လည်း အပါအဝင် သုံးဆယ့်တစ်ဘုံ တွင်
-                      ကျင်လည်ကြကုန်သော သတ္တဝါ တို့အား အမျှပေးဝေ ပါ၏။
+                      တို့အား အမှူးထား၍ သုံးဆယ့်တစ်ဘုံ တွင်
+                      ကျင်လည်ကြကုန်သော လူ နတ် ဗြာဟ္မာ ပုဂ္ဂိုလ် သတ္တဝါ တို့အား အမျှ အမျှ အမျှ ပေးဝေပါ၏။ <br/> အမျှ ရကြသည် ဖြစ်၍ ကိုယ် စိတ် နှလုံး ကျန်းမာ ချမ်းသာကြပါစေ။
                     </p>
+                    <h3 className="mt-5">ဆု</h3>
                     <p>
-                      ဆုတောင်း 🙏🏻 မိမိ ယခု ပြုရသော ဓမ္မအလှူ ကုသိုလ် တို့သည်
-                      နိဗ္ဗာန် ရောက်ကြောင်း အထောက်အပံ့ ဖြစ်ပါစေသတည်း။
+                      မိမိ ယခု ပြုရသော ဓမ္မအလှူ ကုသိုလ် တို့သည်
+                      နိဗ္ဗာန် ရောက်ကြောင်း အထောက်အပံ့ ဖြစ်ပါစေသတည်း။ 🙏🏻 
                     </p>
+                    <h3 className="mt-5">Feedback</h3>
                     <p>
-                      At the first time, I feel like to create the one like
-                      hobby (I mean I did not know that everyone would know the
-                      app.). Sorry for anything spelling occurs. I tried my best
-                      to share this with clean state. For anything spelling
-                      errors, please feel free to let me know.{" "}
+                      At the first time, I didn't know this project will be known by everyone. Sorry for any spelling mistakes that I made. I tried my best
+                      to share this with clean state. For anything feedback, please feel free to let me know. {" "}
                       <a
                         href="https://i-am-xiao-yuan-lv.web.app"
                         target="_blank"
