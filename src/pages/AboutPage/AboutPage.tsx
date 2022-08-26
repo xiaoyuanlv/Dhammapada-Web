@@ -42,7 +42,7 @@ const AboutPage: FC<AboutPageProps> = () => (
                     </p>
                     <p>
                       မိမိ ယခု ပြုရသော ကုသိုလ် အစုစု တို့က်ို ယခု ဘဝတွင်
-                      ကျေးဇူးရှင် မွေးမိခင် ဒေါ်မြင့်မြင့်နွယ် ဖခင် ဦးမြင့်လွင်
+                      ကျေးဇူးရှင် မွေးမိခင် နှင့် ဖခင် 
                       တို့အား အမှူးထား၍ သုံးဆယ့်တစ်ဘုံ တွင်
                       ကျင်လည်ကြကုန်သော လူ နတ် ဗြာဟ္မာ ပုဂ္ဂိုလ် သတ္တဝါ တို့အား အမျှ အမျှ အမျှ ပေးဝေပါ၏။ <br/> အမျှ ရကြသည် ဖြစ်၍ ကိုယ် စိတ် နှလုံး ကျန်းမာ ချမ်းသာကြပါစေ။
                     </p>
@@ -53,7 +53,7 @@ const AboutPage: FC<AboutPageProps> = () => (
                     </p>
                     <h3 className="mt-5">Feedback</h3>
                     <p>
-                      At the first time, I didn't know this project will be known by everyone. Sorry for any spelling mistakes that I made. I tried my best
+                      At the first time, I didn't know this project will be known. Sorry for any spelling mistakes that I made. I tried my best
                       to share this with clean state. For anything feedback, please feel free to let me know. {" "}
                       <a
                         href="https://i-am-xiao-yuan-lv.web.app"
