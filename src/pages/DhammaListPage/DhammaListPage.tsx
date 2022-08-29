@@ -220,7 +220,7 @@ const DhammaListPage: FC<DhammaListPageProps> = () => {
                                 left: "-5px",
                               }}
                             >
-                              {category?.mm_title}.
+                              {category?.mm_title}
                             </p>
                           </div>
                           <div className="card-body text-center py-5 px-5">
@@ -242,7 +242,7 @@ const DhammaListPage: FC<DhammaListPageProps> = () => {
                                 left: "-5px",
                               }}
                             >
-                              {category?.pali_title}.
+                              {category?.pali_title}
                             </p>
                           </div>
                           <div className="card-body text-center py-5 px-5">
@@ -263,7 +263,7 @@ const DhammaListPage: FC<DhammaListPageProps> = () => {
                                 left: "-5px",
                               }}
                             >
-                              {category?.pali_roman}.
+                              {category?.pali_roman}
                             </p>
                           </div>
                           <div className="card-body text-center py-5 px-5">

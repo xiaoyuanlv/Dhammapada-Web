@@ -51,7 +51,7 @@ const MainPage: FC<MainPageProps> = () => {
   return (
     <div className={styles.MainPage}>
       <IndexLayout>
-        <div className="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
+        <div className="card card-body shadow-xl mx-3 mx-md-4 mt-n6" style={{ minHeight: 700 }}>
           <section className="py-7">
             <div className="container">
               <div className="row align-items-center justify-content-center text-center mt-5">
