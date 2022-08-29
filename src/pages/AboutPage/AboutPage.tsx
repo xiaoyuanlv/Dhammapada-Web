@@ -34,7 +34,7 @@ const AboutPage: FC<AboutPageProps> = () => (
                     </p>
                     <h3 className="mt-5">Pali</h3>
                     <p>
-                      I copied from some websites.
+                      I copied from some websites. ( I forgot to bookmark the website links.)
                     </p>
                     <h3 className="mt-5">Thanks</h3>
                     <p>
@@ -53,7 +53,7 @@ const AboutPage: FC<AboutPageProps> = () => (
                     </p>
                     <h3 className="mt-5">Feedback</h3>
                     <p>
-                      At the first time, I didn't know this project will be known. Sorry for any spelling mistakes that I made. I tried my best
+                      At the first time, I didn't know that the project will be known. Sorry for any spelling mistakes that I made. I tried my best
                       to share this with clean state. For anything feedback, please feel free to let me know. {" "}
                       <a
                         href="https://i-am-xiao-yuan-lv.web.app"

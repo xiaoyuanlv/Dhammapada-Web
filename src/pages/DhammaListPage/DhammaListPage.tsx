@@ -7,9 +7,8 @@ import dhammaService from "../../services/dhamma.service";
 import { Category, CategoryResponse } from "../../types/category.model";
 import { Dhamma, DhammaListResponse } from "../../types/dhamma.model";
 import styles from "./DhammaListPage.module.css";
-import lotus from '../../assets/img/lotus.svg';
-import lake from '../../assets/img/lake.png';
-
+import lotus from "../../assets/img/lotus.svg";
+import lake from "../../assets/img/lake.png";
 
 interface DhammaListPageProps {}
 
@@ -117,43 +116,55 @@ const DhammaListPage: FC<DhammaListPageProps> = () => {
   return (
     <div className={styles.DhammaListPage}>
       <DhammaLayout>
-
-      <header className="bg-gradient-dark">
-    <div className="page-header min-vh-75 bg-primary" >
-      <span className="mask bg-gradient-primary opacity-6"></span>
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-7 text-center mx-auto my-auto">
-            <img src={lotus} width={77} height="auto" />
-            <h1 className="text-white mb-2">{category?.id}</h1>
-            <h3 className='text-white mb-5'>  {category?.title} ( {category?.mm_title} ) </h3>
-            <p className="lead mb-4 text-white opacity-8">
-             
-             {category?.pali_title} {category?.pali_roman}
-            </p>
-            <h6 className="text-white mb-2 mt-5">Back to Home</h6>
-            <div className="d-flex justify-content-center">
-              <Link to={"/"}><i className="fa-solid fa-book text-lg text-white"></i></Link>
+        <header className="bg-gradient-dark">
+          <div className="page-header min-vh-75 bg-primary">
+            <span className="mask bg-gradient-primary opacity-6"></span>
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-lg-7 text-center mx-auto my-auto">
+                  <img src={lotus} width={77} height="auto" />
+                  <h1 className="text-white mb-2">{category?.id}</h1>
+                  <h3 className="text-white mb-5">
+                    {category?.title} ( {category?.mm_title} )
+                  </h3>
+                  <p className="lead mb-4 text-white opacity-8">
+                    {category?.pali_title} {category?.pali_roman}
+                  </p>
+                  <h6 className="text-white mb-2 mt-5">Back to Home</h6>
+                  <div className="d-flex justify-content-center">
+                    <Link to={"/"}>
+                      <i className="fa-solid fa-book text-lg text-white"></i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </header>
+        </header>
 
         <div className="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
           <section className="py-2">
             <div className="container">
-           
-              <div className="row">
+              <div className="row  align-items-center justify-content-center text-center">
+
+              { (dhammaList == undefined ||
+                  dhammaList.length <= 0 ) &&  loading &&
+                  <div className="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                  }
+
+                { (dhammaList == undefined ||
+                  dhammaList.length <= 0 ) && !loading &&
+                  <p>Data is not found... Please try again later</p>}
+
                 <div className="col-12 text-center">
                   <h1>{selectedOne?.id}</h1>
-                  { dhammaList.length > 0 && 
-                  <p>
-                    [ {dhammaList[0].id} - {" "}
-                    {dhammaList[dhammaList.length - 1].id} ]
-                  </p>
-                  }
+                  {dhammaList.length > 0 &&
+                    (
+                      <p>
+                        [ {dhammaList[0].id} -{"  "}
+                        {dhammaList[dhammaList.length - 1].id} ]
+                      </p>
+                    )}
                   <a
                     onClick={() => prevPage()}
                     type="button"
@@ -188,7 +199,7 @@ const DhammaListPage: FC<DhammaListPageProps> = () => {
                                 left: "-5px",
                               }}
                             >
-                              {category?.title}.
+                              {category?.title}
                             </p>
                           </div>
                           <div className="card-body text-center py-5 px-5">
@@ -266,13 +277,11 @@ const DhammaListPage: FC<DhammaListPageProps> = () => {
                   </div>
                 )}
 
-
               <div className="row">
                 <div className="col-12 text-center">
                   <img src={lake} width="500" height="auto" />
                 </div>
               </div>
-                
             </div>
           </section>
         </div>
