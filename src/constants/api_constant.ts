@@ -1,1 +1,1 @@
-export const BASE_URL  = 'https://dhammapada-api.herokuapp.com'
+export const BASE_URL  = 'https://dhammapada-api.onrender.com'
