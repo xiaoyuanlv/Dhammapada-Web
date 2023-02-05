@@ -170,7 +170,8 @@ const DhammaListPage: FC<DhammaListPageProps> = () => {
                     type="button"
                     className="btn bg-gradient-info btn-sm mb-0 mt-3"
                   >
-                    <i className="fas fa-caret-left mr-2 "></i>
+                     <i className="fa-solid fa-arrow-left mr-2"></i>
+                   
                   </a>
 
                   &nbsp;&nbsp;
@@ -180,7 +181,8 @@ const DhammaListPage: FC<DhammaListPageProps> = () => {
                     type="button"
                     className="btn bg-gradient-info btn-sm mb-0 mt-3"
                   >
-                    <i className="fas fa-caret-right mr-2"></i>
+                    <i className="fa-solid fa-arrow-right mr-2"></i>
+                    
                   </a>
                 </div>
               </div>
